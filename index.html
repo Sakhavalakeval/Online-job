@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="process_application.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="resume">Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+
+        <label for="cover_letter">Cover Letter:</label>
+        <textarea id="cover_letter" name="cover_letter" rows="4" required></textarea><br>
+
+        <label for="position">Position Applying For:</label>
+        <input type="text" id="position" name="position" required><br>
+
+        <label for="linkedin">LinkedIn Profile (optional):</label>
+        <input type="url" id="linkedin" name="linkedin"><br>
+
+        <label for="website">Personal Website (optional):</label>
+        <input type="url" id="website" name="website"><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
